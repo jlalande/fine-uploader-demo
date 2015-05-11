@@ -222,18 +222,22 @@
   <h1>Fine Uploader Demo</h1>
   <div id="uploader"></div>
 
+  <!-- See listElement option below -->
+  <!--
   <table>
     <tr>
       <td>TEST</td>
       <td id="list"></td>
     </tr>
   </table>
+  -->
 
   <script type="text/javascript">
   var uploader = new qq.FineUploader({
     debug: true,
     element: document.getElementById('uploader'),
-    listElement: document.getElementById('list'),
+    // listElement can be used to specify where to list uploaded elements.
+    // listElement: document.getElementById('list'),
     validation: {
       acceptFiles: 'image/*', /* see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input */
       allowedExtensions: ['jpg', 'bmp', 'png'],
